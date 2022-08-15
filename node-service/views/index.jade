@@ -1,8 +1,7 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 #{title}
   br
 
   h2= 'Create new order'
@@ -41,3 +40,14 @@ block content
       input(type='text', name='id', placeholder='foo', required='required')
     div.actions
       input(type='submit', value='View')
+
+  //- Uncomment below to enable order deletion
+  //- h2= 'Delete Order'
+  //- br
+  //- br
+  //- form(action='/order/delete', method='post')
+  //-   div.input
+  //-     span.label Id
+  //-     input(type='text', name='id', placeholder='foo', required='required')
+  //-   div.actions
+  //-     input(type='submit', value='View')
